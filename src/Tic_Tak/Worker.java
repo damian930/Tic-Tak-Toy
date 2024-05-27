@@ -11,7 +11,7 @@ public class Worker extends Thread {
 	@Override
 	public void run() {
 		super.run();
-		for (int i=0; i<10; i++) {
+		for (int i=0; i<5; i++) {
 			synchronized (this.data) {
 				if (this.data.getState() == 1)
 					this.data.Tic();
